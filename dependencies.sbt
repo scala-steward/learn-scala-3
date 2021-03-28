@@ -1,4 +1,4 @@
-scalaVersion := "3.0.0-M3"
+scalaVersion := "3.0.0-RC1"
 
 //"com.softwaremill.diffx" %% "diffx-scalatest" % "0.4.3" % Test ::
 //"com.novocode" % "junit-interface" % "0.11" % Test
