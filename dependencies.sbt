@@ -1,4 +1,4 @@
-scalaVersion := "3.0.0-RC1"
+ThisBuild / scalaVersion := "3.0.0-RC1"
 
 //"com.github.alexarchambault" %% "scalacheck-shapeless_1.14" % "1.2.5" % Test ::
 //"com.softwaremill.diffx" %% "diffx-scalatest" % "0.4.3" % Test ::

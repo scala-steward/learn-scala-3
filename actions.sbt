@@ -1,1 +1,3 @@
-githubWorkflowJavaVersions := Seq("adopt@1.15")
+ThisBuild / githubWorkflowJavaVersions :=
+  "adopt@1.15" ::
+    Nil
