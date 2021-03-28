@@ -7,5 +7,5 @@ ThisBuild / scalaVersion := "3.0.0-RC1"
 
 libraryDependencies ++=
   "org.scalacheck" %% "scalacheck" % "1.15.3" % Test ::
-    "org.scalatest" %% "scalatest" % "3.2.5" % Test ::
+    "org.scalatest" %% "scalatest" % "3.2.6" % Test ::
     Nil
