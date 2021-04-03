@@ -12,8 +12,7 @@ import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
  * @since April 03, 2021
  * @author <a href="mailto:michael@ahlers.consulting">Michael Ahlers</a>
  */
-class ExtensionMethodsSpec extends AnyWordSpec {
-
+class ExtensionMethodsSpec extends AnyWordSpec:
   "Person name extensions" should {
 
     "replace given name" in {
@@ -47,5 +46,3 @@ class ExtensionMethodsSpec extends AnyWordSpec {
     }
 
   }
-
-}
