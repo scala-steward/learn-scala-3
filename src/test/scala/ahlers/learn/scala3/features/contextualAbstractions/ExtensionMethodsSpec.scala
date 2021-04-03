@@ -1,10 +1,10 @@
 package ahlers.learn.scala3.features.contextualAbstractions
 
-import ahlers.learn.scala3.features.contextualAbstractions.PersonNameExtension._
+import ahlers.learn.scala3.features.contextualAbstractions.PersonNameExtension.{ withFamilyName, withGivenName, withMiddleName }
 import ahlers.learn.scala3.models.{ FamilyName, GivenName, MiddleName, PersonName }
-import ahlers.learn.scala3.models.scalacheck.instances.{ given_Arbitrary_FamilyName, given_Arbitrary_MiddleName, given_Arbitrary_GivenName, given_Arbitrary_PersonName }
+import ahlers.learn.scala3.models.scalacheck.instances.given
 import org.scalacheck.Arbitrary
-import org.scalatest.matchers.should.Matchers._
+import org.scalatest.matchers.should.Matchers.*
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
 

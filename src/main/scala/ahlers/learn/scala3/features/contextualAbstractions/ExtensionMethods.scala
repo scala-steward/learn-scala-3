@@ -13,6 +13,7 @@ import scala.annotation.targetName
  * @author <a href="mailto:michael@ahlers.consulting">Michael Ahlers</a>
  */
 object PersonNameExtension {
+
   extension(personName: PersonName) {
 
     def withGivenName(givenName: Option[GivenName]): PersonName = personName.copy(givenName = givenName)
@@ -25,6 +26,7 @@ object PersonNameExtension {
     def withFamilyName(familyName: FamilyName): PersonName = withFamilyName(Some(familyName))
 
   }
+
 }
 
 object ExtensionMethodsApp extends App {
