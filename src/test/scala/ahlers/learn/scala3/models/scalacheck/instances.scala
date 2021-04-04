@@ -16,7 +16,7 @@ import org.scalacheck.Gen.oneOf
  * @since April 03, 2021
  * @author <a href="mailto:michael@ahlers.consulting">Michael Ahlers</a>
  */
-object instances {
+object instances:
 
   given [T:Arbitrary]: Arbitrary[Leaf[T]] = Arbitrary(arbitrary[T].map(Leaf(_)))
 
@@ -41,4 +41,3 @@ object instances {
         middleName,
         familyName))
 
-}
