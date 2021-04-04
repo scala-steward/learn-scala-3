@@ -1,4 +1,4 @@
-package ahlers.learn.scala3.features.contextualAbstractions
+package ahlers.learn.scala3.reference.contextualAbstractions
 
 import ahlers.learn.scala3.models.extensions.personNames.*
 import ahlers.learn.scala3.models.{ FamilyName, GivenName, MiddleName, PersonName }
