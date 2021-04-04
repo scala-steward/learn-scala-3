@@ -1,6 +1,6 @@
 package ahlers.learn.scala3.features.contextualAbstractions
 
-import ahlers.learn.scala3.features.contextualAbstractions.PersonNameExtension.{ withFamilyName, withGivenName, withMiddleName }
+import ahlers.learn.scala3.models.extensions.personNames.*
 import ahlers.learn.scala3.models.{ FamilyName, GivenName, MiddleName, PersonName }
 import ahlers.learn.scala3.models.scalacheck.instances.given
 import org.scalacheck.Arbitrary
@@ -13,6 +13,7 @@ import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
  * @author <a href="mailto:michael@ahlers.consulting">Michael Ahlers</a>
  */
 class ExtensionMethodsSpec extends AnyWordSpec:
+
   "Person name extensions" should {
 
     "replace given name" in {

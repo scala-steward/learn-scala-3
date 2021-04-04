@@ -1,9 +1,6 @@
-package ahlers.learn.scala3.features.contextualAbstractions
+package ahlers.learn.scala3.models.extensions
 
-import ahlers.learn.scala3.models.PersonName
-import ahlers.learn.scala3.models.FamilyName
-import ahlers.learn.scala3.models.MiddleName
-import ahlers.learn.scala3.models.GivenName
+import ahlers.learn.scala3.models.{FamilyName, GivenName, MiddleName, PersonName}
 
 import scala.annotation.targetName
 
@@ -11,7 +8,7 @@ import scala.annotation.targetName
  * @since March 28, 2021
  * @author <a href="mailto:michael@ahlers.consulting">Michael Ahlers</a>
  */
-object PersonNameExtension:
+trait PersonNameExtension:
 
   extension(personName: PersonName)
 
@@ -23,3 +20,5 @@ object PersonNameExtension:
 
     def withFamilyName(familyName: Option[FamilyName]): PersonName = personName.copy(familyName = familyName)
     def withFamilyName(familyName: FamilyName): PersonName = withFamilyName(Some(familyName))
+
+object personNames extends PersonNameExtension
