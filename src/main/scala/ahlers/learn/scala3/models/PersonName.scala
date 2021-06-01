@@ -6,15 +6,15 @@ package ahlers.learn.scala3.models
  */
 opaque type GivenName = String
 object GivenName:
-  def apply(givenName:String):GivenName = givenName
+  def apply(givenName: String): GivenName = givenName
 
 opaque type MiddleName = String
 object MiddleName:
-  def apply(middleName:String):MiddleName = middleName
+  def apply(middleName: String): MiddleName = middleName
 
 opaque type FamilyName = String
 object FamilyName:
-  def apply(familyName:String):FamilyName = familyName
+  def apply(familyName: String): FamilyName = familyName
 
 case class PersonName(
   givenName: Option[GivenName],
