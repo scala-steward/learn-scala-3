@@ -11,7 +11,11 @@ enum Node[T] derives CanEqual:
   case Tree(nodes: Seq[Node[T]])
 
 object Node:
+
   import Node.*
-  def apply[T](x:T):Leaf[T] = Leaf(x)
-  def apply[T](nodes: Seq[Node[T]]):Tree[T] = Tree(nodes)
-  def apply[T](node: Node[T], nodes:Node[T]*):Tree[T] = Tree(node+:nodes)
+
+  def apply[T](x: T): Leaf[T] = Leaf(x)
+
+  def apply[T](nodes: Seq[Node[T]]): Tree[T] = Tree(nodes)
+
+  def apply[T](node: Node[T], nodes: Node[T]*): Tree[T] = Tree(node +: nodes)
