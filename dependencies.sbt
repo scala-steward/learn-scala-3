@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "3.0.0"
+ThisBuild / scalaVersion := "3.0.1"
 //ThisBuild / crossScalaVersions += "2.13.5"
 
 //resolvers += sbt.Opts.resolver.sonatypeReleases
